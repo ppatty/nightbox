@@ -4,6 +4,7 @@
 
     <application
         android:allowBackup="false"
+        android:icon="@drawable/ic_nightbox"
         android:label="Nightbox"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="false">

@@ -21,7 +21,6 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import java.util.Locale;
 
 public final class MainActivity extends Activity {
     private static final String HOME_URL = "https://nightbox.grok.me";
