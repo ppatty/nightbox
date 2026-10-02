@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Nightbox",
+      "hasCanvas": false,
+      "bodyTextLen": 155,
+      "bodyTextHash": "29456c90231a6ef7da2859a76791449fa7a427e5b1cc0b9b9ccabb1eacfde42b",
+      "bodyTextPrefix": "Nightbox Import Categories All videos 0 Playlists All playlists ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Nightbox",
+      "hasCanvas": false,
+      "bodyTextLen": 355,
+      "bodyTextHash": "4b01ec34b5efee321c5e879dc08fbda7e0d389f68c4f011dfc6863b63e7b5baa",
+      "bodyTextPrefix": "Nightbox 0 videos · 0 MB on this device Select Newest Library Pl",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

@@ -1,0 +1,40 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Nightbox",
+      "hasCanvas": false,
+      "bodyTextLen": 410,
+      "bodyTextHash": "e59c1c0dc7c674cf88bcb5191b37d221426560ee3de7fe80bbd2421385c6a6e6",
+      "bodyTextPrefix": "Nightbox Import Categories All videos 0 Playlists All playlists ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Nightbox",
+      "hasCanvas": false,
+      "bodyTextLen": 355,
+      "bodyTextHash": "4b01ec34b5efee321c5e879dc08fbda7e0d389f68c4f011dfc6863b63e7b5baa",
+      "bodyTextPrefix": "Nightbox 0 videos · 0 MB on this device Select Newest Library Pl",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": true,
+  "baselineReasons": [
+    "desktop: body text changed (155 -> 410 chars, hash mismatch)"
+  ]
+}

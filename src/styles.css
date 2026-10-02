@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Avenir Next", "Segoe UI", sans-serif;
+  --font-display: "Fraunces", "Iowan Old Style", Palatino, "Palatino Linotype", serif;
+  --color-bg: #100e0c;
+  --color-surface: #1b1815;
+  --color-surface-2: #26221e;
+  --color-fg: #f4efe6;
+  --color-muted: #b3aa9f;
+  --color-accent: #e4a15a;
+  --color-accent-fg: #1c130a;
+  --color-border: #3a342e;
+  --color-danger: #e7a090;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+
+.safe-bottom {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+}
+
+.sheet-panel {
+  max-height: 85dvh;
+}
+
+.queue-panel {
+  max-height: 70dvh;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.gesture-layer {
+  touch-action: none;
+}
+
+.scrub {
+  appearance: none;
+  width: 100%;
+  height: 2.75rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+.scrub::-webkit-slider-runnable-track {
+  height: 0.25rem;
+  border-radius: 999px;
+  background: var(--color-border);
+}
+
+.scrub::-webkit-slider-thumb {
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: -0.5rem;
+  border-radius: 999px;
+  background: var(--color-accent);
+}
+
+.scrub::-moz-range-track {
+  height: 0.25rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--color-border);
+}
+
+.scrub::-moz-range-thumb {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--color-accent);
+}
+
+@keyframes seek-pop {
+  from {
+    opacity: 0;
+    transform: translateY(0.25rem) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.seek-pop {
+  animation: seek-pop 160ms ease-out;
+}
+
+@media (max-height: 520px) {
+  .dock-extra {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .seek-pop {
+    animation: none;
+  }
+}
