@@ -11,5 +11,5 @@ installation from the app used to open the download.
 
 ## Build
 
-From this directory, run `gradle assembleDebug`. The installable debug APK is
+From this directory, run `./gradlew assembleDebug`. The installable debug APK is
 written to `app/build/outputs/apk/debug/app-debug.apk`.
